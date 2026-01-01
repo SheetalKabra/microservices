@@ -51,4 +51,18 @@ public class CardsController {
         }
     }
 
+    @DeleteMapping("/delete")
+    public ResponseEntity<ResponseDto> deleteCard(@RequestParam String mobileNumber){
+        boolean isUpdated = iCardsService.deleteCard(mobileNumber);
+        if(isUpdated){
+            return ResponseEntity
+                    .status(HttpStatus.OK)
+                    .body(new ResponseDto(CardsConstants.STATUS_200, CardsConstants.MESSAGE_200));
+        }else{
+            return ResponseEntity
+                    .status(HttpStatus.EXPECTATION_FAILED)
+                    .body(new ResponseDto(CardsConstants.STATUS_417, CardsConstants.MESSAGE_417));
+        }
+    }
+
 }
