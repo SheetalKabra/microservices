@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to Eazybank accounts related QA API's"
+  contactDetails:
+    name: "Smitha Roy - QA Lead"
+    email: "smitharoy@eazybank.com"
+  onCallSupport:
+    - (666) 265-1234
+    - (666) 734-1345
