@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+cards:
+  message: "Welcome to Eazybank cards related local API's"
+  contactDetails:
+    name: "Schmita - QA Developer"
+    email: "schmita@eazybank.com"
+  onCallSupport:
+    - (666) 322-1234
+    - (666) 322-1345
