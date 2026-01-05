@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "2.0"
+
+loans:
+  message: "Welcome to Eazybank loans related qa API's"
+  contactDetails:
+    name: "Sahmita - QA Lead"
+    email: "sahmita@eazybank.com"
+  onCallSupport:
+    - (666) 342-1234
+    - (666) 534-1345

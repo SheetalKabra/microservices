@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "prod"
+
+build:
+  version: "1.0"
+
+loans:
+  message: "Welcome to Eazybank loans related prod API's"
+  contactDetails:
+    name: "Aishwarya - Prod Owner"
+    email: "aishwarya@eazybank.com"
+  onCallSupport:
+    - (888) 836-1234
+    - (888) 829-1345
