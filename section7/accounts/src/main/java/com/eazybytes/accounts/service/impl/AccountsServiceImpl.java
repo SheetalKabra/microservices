@@ -19,10 +19,14 @@ import java.util.Optional;
 import java.util.Random;
 
 @Service
-@AllArgsConstructor
 public class AccountsServiceImpl implements IAccountsService {
     private AccountsRepository accountsRepository;
     private CustomerRepository customerRepository;
+
+    public AccountsServiceImpl(AccountsRepository accountsRepository, CustomerRepository customerRepository) {
+        this.accountsRepository = accountsRepository;
+        this.customerRepository = customerRepository;
+    }
 
     @Override
     public void createAccount(CustomerDto customerDto) {
