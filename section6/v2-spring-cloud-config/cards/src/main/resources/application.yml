@@ -24,3 +24,9 @@ spring:
 
 build:
   version: "3.0"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
