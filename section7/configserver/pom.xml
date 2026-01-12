@@ -78,7 +78,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>sheetaldockerpractice/${project.artifactId}:s6</image>
+						<image>sheetaldockerpractice/${project.artifactId}:s7</image>
 					</to>
 				</configuration>
 			</plugin>
