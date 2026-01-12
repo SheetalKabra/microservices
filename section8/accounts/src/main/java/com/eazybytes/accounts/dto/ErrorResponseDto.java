@@ -12,8 +12,9 @@ import java.time.LocalDateTime;
         description = "Schema to hold failed response information"
 )
 @Data
-@AllArgsConstructor
 public class ErrorResponseDto {
+
+
     @Schema(
             description = "Api path invoked by client"
     )
@@ -30,4 +31,11 @@ public class ErrorResponseDto {
             description = "The time when error happened"
     )
     private LocalDateTime errorTime;
+
+    public ErrorResponseDto(String apiPath, HttpStatus errorCode, String errorMessage, LocalDateTime errorTime) {
+        this.apiPath = apiPath;
+        this.errorCode = errorCode;
+        this.errorMessage = errorMessage;
+        this.errorTime = errorTime;
+    }
 }
