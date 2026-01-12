@@ -9,11 +9,11 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eazybytes</groupId>
-	<artifactId>cards</artifactId>
+	<artifactId>accounts</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>cards</name>
-	<description>Microservices for Cards</description>
+	<name>accounts</name>
+	<description>Microservices for Accounts</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -37,13 +37,8 @@
 			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-amqp</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.mysql</groupId>
-			<artifactId>mysql-connector-j</artifactId>
-			<scope>runtime</scope>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-h2console</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -148,7 +143,7 @@
 				<version>3.5.1</version>
 				<configuration>
 					<to>
-						<image>sheetaldockerpractice/${project.artifactId}:s7</image>
+						<image>sheetaldockerpractice/${project.artifactId}:s6</image>
 					</to>
 				</configuration>
 			</plugin>

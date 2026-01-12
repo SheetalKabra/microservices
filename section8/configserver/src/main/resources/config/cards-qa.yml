@@ -1,0 +1,8 @@
+cards:
+  message: "Welcome to Eazybank cards related local API's"
+  contactDetails:
+    name: "Schmita - QA Developer"
+    email: "schmita@eazybank.com"
+  onCallSupport:
+    - (666) 322-1234
+    - (666) 322-1345
