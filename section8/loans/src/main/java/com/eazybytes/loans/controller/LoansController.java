@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.*;
         description = "CRUD REST APIS in Eazybank to create, update, delete and fetch loans details."
 )
 @RestController
-@RequestMapping(path = "/loans/api/v1",  produces = {MediaType.APPLICATION_JSON_VALUE})
+@RequestMapping(path = "/api/v1",  produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class LoansController {
     private final ILoansService iLoansService;
@@ -76,7 +76,7 @@ public class LoansController {
                                                     String mobileNumber){
         LoansDto loansDto = iLoansService.fetchLoan(mobileNumber);
         return ResponseEntity
-                .status(HttpStatus.FOUND)
+                .status(HttpStatus.OK)
                 .body(loansDto);
     }
 
